@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: arm-tasks
+spec:
+  replicas: 1 #defines the number of pods to deploy with the image. can be scaled using kubectl scale deployment [name] --replicas [num]
+  selector:
+    matchLabels:
+      app: arm-tasks
+  template:
+    metadata:
+      labels:
+        app: arm-tasks #label the pods so you can target them when creating a service
+    spec:
+      containers:
+      - name: go-app
+        image: khairahscorner/arm_task:go
+      - name: node-app
+        image: khairahscorner/arm_task:node

@@ -1,0 +1,21 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: arm-tasks-lb-service
+spec:
+  type: LoadBalancer
+  selector:
+    app: arm-tasks
+  ports:
+    - name: node-api
+      protocol: TCP
+      port: 80  #the port to use when communicating with other pods in the cluster, nodePort defaults to this value since it's undefined
+      targetPort: 3000
+    - name: go-api
+      protocol: TCP
+      port: 9090  #the port to use when communicating with other pods in the cluster, nodePort defaults to this value since it's undefined
+      targetPort: 8080
+
+
+#nodePort: the port to use to expose the service when using external access like a load balancer
+#targetPort: port to receive request from and send to pod/app in pod with the matching port, port forwarding uses this

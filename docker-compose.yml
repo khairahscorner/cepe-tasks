@@ -1,0 +1,14 @@
+# Copyright: 2020 Arm Ltd. All Rights Reserved.
+
+version: '3'
+services:
+  api-node:
+    build: ./api-node
+    image: node-api:v1
+    ports:
+      - 3000:3000
+  fibonacci-api:
+    build: ./fibonacci-api
+    image: fibonacci-api:modified
+    ports:
+      - 8080:8080
