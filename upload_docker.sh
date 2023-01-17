@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
-# This file tags and uploads an image to Docker Hub
+# This file tags and uploads images individually to Docker Hub or just use docker compose push??
 
-# Assumes that an image is built via `run_docker.sh`
+# Assumes that an image is built via running the docker-compose file: docker compose build
 
 # Step 1:
 # Create dockerpath

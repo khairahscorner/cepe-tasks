@@ -17,3 +17,6 @@ spec:
         image: khairahscorner/arm_task:go
       - name: node-app
         image: khairahscorner/arm_task:node
+
+
+# for aws elb, label as app.kubernetes.io/name: arm-tasks instead

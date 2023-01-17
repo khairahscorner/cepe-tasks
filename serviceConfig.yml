@@ -3,7 +3,7 @@ kind: Service
 metadata:
   name: arm-tasks-lb-service
 spec:
-  type: LoadBalancer
+  type: LoadBalancer #can also be NodePort
   selector:
     app: arm-tasks
   ports:
@@ -19,3 +19,5 @@ spec:
 
 #nodePort: the port to use to expose the service when using external access like a load balancer
 #targetPort: port to receive request from and send to pod/app in pod with the matching port, port forwarding uses this
+
+# for using aws elb controller, label as app.kubernetes.io/name: arm-tasks instead
