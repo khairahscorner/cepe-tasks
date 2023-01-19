@@ -15,6 +15,10 @@ spec:
       protocol: TCP
       port: 9090  #the port to use when communicating with other pods in the cluster, nodePort defaults to this value since it's undefined
       targetPort: 8080
+    - name: cache-api
+      protocol: TCP
+      port: 8081  #the port to use when communicating with other pods in the cluster, nodePort defaults to this value since it's undefined
+      targetPort: 8081
 
 
 #nodePort: the port to use to expose the service when using external access like a load balancer

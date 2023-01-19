@@ -12,3 +12,8 @@ services:
     image: fibonacci-api:modified
     ports:
       - 8080:8080
+  lru-cache:
+    build: ./lru-cache
+    image: lru-cache:v1
+    ports:
+      - 8081:8081

@@ -17,6 +17,8 @@ spec:
         image: khairahscorner/arm_task:go
       - name: node-app
         image: khairahscorner/arm_task:node
+      - name: cache-app
+        image: khairahscorner/arm_task:demo-cache #use local if using minikube
 
 
 # for aws elb, label as app.kubernetes.io/name: arm-tasks instead
