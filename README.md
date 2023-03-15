@@ -1,22 +1,4 @@
-# CEPE Software Engineering Technical Assessment
-
-This technical assessment forms part of the interview process for a software
-engineering role inside Central Engineering - Productivity Engineering (CEPE)
-at Arm. It is based around a small demo program that exposes an HTTP API to
-return requested values from the Fibonacci sequence.
-
-We have packaged it up with a Docker build environment to make it easier for
-you to build and run. In order to run it, you'll need to have the `docker`
-and `docker-compose` command line tools installed. You will also need a way
-of making requests to an HTTP API. On Unix systems such as Linux and OSX, the
-`curl` command line tool should be available. On Windows systems, you will
-need to install curl or another tool
-(such as [Postman](https://www.postman.com/downloads/)) to interact with the
-HTTP API.
-
-Before you start the tasks, it would be worth familiarising yourself with
-the demo application. The following shows how to start it up, and a couple
-of example queries:
+# Technical Assessment
 
 ```
 # Starting the demo app. The first time will be slower as it needs to build.
@@ -102,17 +84,3 @@ Your re-implementation should satisfy the following constraints:
 
 You may also want to add the `/recursive-fibonacci` endpoint to your implementation.
 
-## A Note on Expected Duration
-
-Whichever task you have chosen, we don't expect you to spend more than a couple
-of hours on your solution: it should fit comfortably into one evening, so please
-don't spend a week refactoring your code!
-
-## A note for Windows Users
-
-Installing Docker Desktop is a little more involved on Windows as it requires the
-use of the 'Windows Subsystem for Linux' (WSL2) and also some virtualisation features
-to be enabled in the BIOS. The
-[docker docs](https://docs.docker.com/docker-for-windows/install/) are helpful but you
-may prefer to set up a linux virtual machine on your computer (e.g. using VirtualBox),
-or use a [free AWS EC2 instance](https://aws.amazon.com/free) instead.
