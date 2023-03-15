@@ -1,4 +1,3 @@
-# Technical Assessment
 
 ```
 # Starting the demo app. The first time will be slower as it needs to build.
@@ -20,16 +19,6 @@ docker-compose down
 ```
 
 ## Tasks
-
-Now that you are familiar with the demo app and have managed to build and run
-it, here are some tasks for you to attempt. We would like to see an attempt
-at one of them. Have a read through and choose the task that interests you the
-most, and/or the task which will best let you exibit your skills.
-
-Once you have completed your task, please re-compress the entire `fibonacci-api`
-directory and send it back to us. Ahead of the interview, we will look through
-your code, and during the interview we will go through your solution together
-and ask some questions about it.
 
 ### Add Recursive Endpoint to Demo App
 
